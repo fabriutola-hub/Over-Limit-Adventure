@@ -1,0 +1,586 @@
+.home-page,
+.adventures-page,
+.about-page,
+.contact-page,
+.gallery-page {
+  --neo-ink: #101010;
+  --neo-paper: #fffdf5;
+  --neo-paper-alt: #fff2cc;
+  --neo-accent: #ffd43b;
+  --neo-accent-2: #2f6bff;
+  --neo-accent-3: #ff6b57;
+  --neo-shadow: 8px 8px 0 var(--neo-ink);
+  --neo-shadow-lg: 14px 14px 0 var(--neo-ink);
+  --neo-border: 3px solid var(--neo-ink);
+  --neo-radius: 18px;
+  --header-shell-bg: linear-gradient(180deg, #fffdf5 0%, #ffffff 58%, #fff2cc 100%);
+  --header-panel-bg: linear-gradient(180deg, #fffdf5 0%, #fff0bd 100%);
+  --header-chip-bg: #ffffff;
+  --header-chip-hover: #fff2cc;
+  --header-chip-active: var(--neo-accent);
+  --header-accent-start: var(--neo-accent-3);
+  --header-accent-mid: var(--neo-accent);
+  --header-accent-end: var(--neo-accent-2);
+  color: var(--neo-ink);
+  background:
+    radial-gradient(circle at 12% 10%, rgba(255, 212, 59, 0.36), transparent 18rem),
+    radial-gradient(circle at 86% 12%, rgba(47, 107, 255, 0.18), transparent 17rem),
+    radial-gradient(circle at 82% 76%, rgba(255, 107, 87, 0.14), transparent 18rem),
+    repeating-linear-gradient(90deg, rgba(16, 16, 16, 0.045) 0 1px, transparent 1px 34px),
+    repeating-linear-gradient(0deg, rgba(16, 16, 16, 0.045) 0 1px, transparent 1px 34px),
+    linear-gradient(180deg, #fffdf6 0%, #fff2d6 100%);
+}
+
+.adventures-page {
+  --neo-accent: #ffb020;
+  --neo-accent-2: #2357ff;
+  --neo-accent-3: #ff7a45;
+}
+
+.about-page {
+  --neo-accent: #ffe45b;
+  --neo-accent-2: #1e7a52;
+  --neo-accent-3: #ff784f;
+}
+
+.contact-page {
+  --neo-accent: #ff9f43;
+  --neo-accent-2: #2458ff;
+  --neo-accent-3: #63c57a;
+}
+
+.gallery-page {
+  --neo-accent: #ffd43b;
+  --neo-accent-2: #2357ff;
+  --neo-accent-3: #ff6b57;
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.adventures-page h1,
+.adventures-page h2,
+.adventures-page h3,
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.contact-page h1,
+.contact-page h2,
+.contact-page h3,
+.gallery-page h1,
+.gallery-page h2,
+.gallery-page h3 {
+  font-family: "Space Grotesk", "Manrope", "Segoe UI", sans-serif;
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  color: var(--neo-ink);
+}
+
+.home-page p,
+.adventures-page p,
+.about-page p,
+.contact-page p,
+.gallery-page p {
+  color: rgba(16, 16, 16, 0.78);
+}
+
+.home-page .eyebrow,
+.adventures-page .eyebrow,
+.about-page .eyebrow,
+.contact-page .eyebrow,
+.gallery-page .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.45rem 0.85rem;
+  border: var(--neo-border);
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 4px 4px 0 var(--neo-ink);
+  color: var(--neo-ink);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+}
+
+.home-page .eyebrow::before,
+.adventures-page .eyebrow::before,
+.about-page .eyebrow::before,
+.contact-page .eyebrow::before,
+.gallery-page .eyebrow::before {
+  display: none;
+}
+
+.home-page .button,
+.home-page .button-nav,
+.adventures-page .button,
+.adventures-page .button-nav,
+.about-page .button,
+.about-page .button-nav,
+.contact-page .button,
+.contact-page .button-nav,
+.gallery-page .button,
+.gallery-page .button-nav {
+  border: var(--neo-border);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 var(--neo-ink);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.home-page .button:hover,
+.home-page .button-nav:hover,
+.adventures-page .button:hover,
+.adventures-page .button-nav:hover,
+.about-page .button:hover,
+.about-page .button-nav:hover,
+.contact-page .button:hover,
+.contact-page .button-nav:hover,
+.gallery-page .button:hover,
+.gallery-page .button-nav:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 var(--neo-ink);
+}
+
+.home-page .button-primary,
+.adventures-page .button-primary,
+.about-page .button-primary,
+.contact-page .button-primary,
+.gallery-page .button-primary {
+  background: var(--neo-accent);
+  color: var(--neo-ink);
+}
+
+.home-page .button-secondary,
+.adventures-page .button-secondary,
+.about-page .button-secondary,
+.contact-page .button-secondary,
+.gallery-page .button-secondary {
+  background: #ffffff;
+  border-color: var(--neo-ink);
+  color: var(--neo-ink);
+}
+
+.home-page .button-nav,
+.adventures-page .button-nav,
+.about-page .button-nav,
+.contact-page .button-nav,
+.gallery-page .button-nav {
+  background: var(--neo-accent-2);
+  border-color: var(--neo-ink);
+  color: #ffffff;
+}
+
+.home-page .site-header,
+.adventures-page .site-header,
+.about-page .site-header,
+.contact-page .site-header,
+.gallery-page .site-header {
+  background: transparent;
+}
+
+.home-page .header-inner,
+.adventures-page .header-inner,
+.about-page .header-inner,
+.contact-page .header-inner,
+.gallery-page .header-inner {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.home-page .site-header.is-scrolled,
+.adventures-page .site-header.is-scrolled,
+.about-page .site-header.is-scrolled,
+.contact-page .site-header.is-scrolled,
+.gallery-page .site-header.is-scrolled {
+  background: transparent;
+  box-shadow: none;
+}
+
+.home-page .brand-logo img,
+.adventures-page .brand-logo img,
+.about-page .brand-logo img,
+.contact-page .brand-logo img,
+.gallery-page .brand-logo img {
+  filter: brightness(0) saturate(100%) drop-shadow(0 8px 18px rgba(0, 0, 0, 0.08));
+}
+
+.home-page .nav-shell,
+.adventures-page .nav-shell,
+.about-page .nav-shell,
+.contact-page .nav-shell,
+.gallery-page .nav-shell {
+  background: var(--header-shell-bg);
+  box-shadow: 8px 8px 0 var(--neo-ink);
+}
+
+.home-page .site-header.is-scrolled .nav-shell,
+.adventures-page .site-header.is-scrolled .nav-shell,
+.about-page .site-header.is-scrolled .nav-shell,
+.contact-page .site-header.is-scrolled .nav-shell,
+.gallery-page .site-header.is-scrolled .nav-shell {
+  box-shadow: 10px 10px 0 var(--neo-ink);
+}
+
+.home-page .site-nav a,
+.adventures-page .site-nav a,
+.about-page .site-nav a,
+.contact-page .site-nav a,
+.gallery-page .site-nav a {
+  background: var(--header-chip-bg);
+  border-color: var(--neo-ink);
+  color: var(--neo-ink);
+}
+
+.home-page .site-nav a:hover,
+.adventures-page .site-nav a:hover,
+.about-page .site-nav a:hover,
+.contact-page .site-nav a:hover,
+.gallery-page .site-nav a:hover {
+  background: var(--header-chip-hover);
+}
+
+.home-page .site-nav a[aria-current="page"],
+.adventures-page .site-nav a[aria-current="page"],
+.about-page .site-nav a[aria-current="page"],
+.contact-page .site-nav a[aria-current="page"],
+.gallery-page .site-nav a[aria-current="page"] {
+  background: var(--header-chip-active);
+  color: var(--neo-ink);
+}
+
+.home-page .menu-toggle,
+.adventures-page .menu-toggle,
+.about-page .menu-toggle,
+.contact-page .menu-toggle,
+.gallery-page .menu-toggle {
+  border: var(--neo-border);
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 5px 5px 0 var(--neo-ink);
+}
+
+.home-page .menu-toggle span,
+.adventures-page .menu-toggle span,
+.about-page .menu-toggle span,
+.contact-page .menu-toggle span,
+.gallery-page .menu-toggle span {
+  background: var(--neo-ink);
+}
+
+.home-page .neo-hero-copy,
+.adventures-page .adventures-intro-stack,
+.gallery-page .gallery-copy {
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border: var(--neo-border);
+  border-radius: 24px;
+  background: rgba(255, 253, 245, 0.94);
+  box-shadow: var(--neo-shadow-lg);
+}
+
+.home-page .neo-hero-copy h1,
+.home-page .neo-hero-copy p,
+.adventures-page .adventures-intro-stack h1,
+.adventures-page .adventures-intro-stack p,
+.gallery-page .gallery-copy h1,
+.gallery-page .gallery-copy p {
+  color: var(--neo-ink);
+}
+
+.home-page .neo-hero-copy {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.home-page .neo-hero-copy h1,
+.home-page .neo-hero-copy p {
+  color: #ffffff;
+  text-shadow: 0 8px 30px rgba(8, 15, 35, 0.45);
+}
+
+.home-page .neo-hero-stack,
+.adventures-page .adventures-side-notes,
+.gallery-page .gallery-hero-stack {
+  gap: 1rem;
+}
+
+.home-page .neo-float-card,
+.home-page .neo-value-card,
+.home-page .neo-story-panel,
+.home-page .neo-experience-card,
+.home-page .neo-proof-card,
+.home-page .neo-featured-card,
+.home-page .neo-route-card,
+.home-page .neo-cta-panel,
+.adventures-page .adventures-poster-card,
+.adventures-page .adventures-note,
+.adventures-page .adventures-rhythm-card,
+.adventures-page .adventures-catalog-rail,
+.adventures-page .adventure-board-card,
+.adventures-page .adventures-cta-banner,
+.contact-page .contact-intro-panel,
+.contact-page .contact-command-form,
+.contact-page .contact-rail-card,
+.contact-page .contact-intro-note,
+.contact-page .contact-answer-card,
+.gallery-page .gallery-panel,
+.gallery-page .gallery-card,
+.gallery-page .gallery-cta-panel {
+  border: var(--neo-border);
+  border-radius: var(--neo-radius);
+  background: var(--neo-paper);
+  box-shadow: var(--neo-shadow);
+}
+
+.home-page .neo-float-card-blue,
+.home-page .neo-experience-card-blue,
+.home-page .neo-cta-panel,
+.adventures-page .adventures-note-blue,
+.adventures-page .adventures-rhythm-card-blue,
+.adventures-page .adventure-board-card-blue,
+.adventures-page .adventures-cta-banner,
+.contact-page .contact-rail-card-blue,
+.contact-page .contact-answer-card-blue,
+.gallery-page .gallery-card-blue,
+.gallery-page .gallery-cta-panel {
+  background: var(--neo-accent-2);
+  box-shadow: 10px 10px 0 var(--neo-accent);
+}
+
+.home-page .neo-experience-card-yellow,
+.adventures-page .adventure-board-card-yellow,
+.contact-page .contact-rail-card-yellow,
+.contact-page .contact-answer-card-yellow,
+.gallery-page .gallery-card-yellow {
+  background: var(--neo-accent);
+  box-shadow: 10px 10px 0 var(--neo-accent-2);
+}
+
+.home-page .neo-float-card-blue h2,
+.home-page .neo-float-card-blue p,
+.home-page .neo-float-card-blue span,
+.home-page .neo-float-card-blue strong,
+.home-page .neo-cta-panel h2,
+.home-page .neo-cta-panel p,
+.home-page .neo-cta-panel span,
+.adventures-page .adventures-note-blue p,
+.adventures-page .adventures-rhythm-card-blue p,
+.adventures-page .adventures-rhythm-card-blue strong,
+.adventures-page .adventure-board-card-blue h3,
+.adventures-page .adventure-board-card-blue p,
+.adventures-page .adventure-board-card-blue .adventure-board-height,
+.adventures-page .adventure-board-card-blue .pill,
+.adventures-page .adventure-board-card-blue .adventure-board-tags span,
+.adventures-page .adventures-cta-banner h2,
+.adventures-page .adventures-cta-banner p,
+.contact-page .contact-rail-card-blue strong,
+.contact-page .contact-rail-card-blue p,
+.contact-page .contact-rail-card-blue .contact-mini-label,
+.contact-page .contact-answer-card-blue h3,
+.contact-page .contact-answer-card-blue p,
+.contact-page .contact-answer-card-blue .contact-mini-label,
+.gallery-page .gallery-card-blue h3,
+.gallery-page .gallery-panel h2,
+.gallery-page .gallery-panel p,
+.gallery-page .gallery-cta-panel h2,
+.gallery-page .gallery-cta-panel p,
+.gallery-page .gallery-cta-panel .eyebrow {
+  color: #ffffff;
+}
+
+.home-page .neo-float-card-blue .neo-mini-label,
+.home-page .neo-cta-panel .button-secondary,
+.adventures-page .adventures-note-blue .adventures-note-kicker,
+.adventures-page .adventure-board-card-blue .pill,
+.adventures-page .adventure-board-card-blue .adventure-board-height,
+.adventures-page .adventure-board-card-blue .adventure-board-tags span,
+.contact-page .contact-rail-card-blue .contact-mini-label,
+.contact-page .contact-answer-card-blue .contact-mini-label {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.92);
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.home-page .neo-cta-panel .button-primary,
+.adventures-page .adventures-cta-banner .button-primary,
+.gallery-page .gallery-cta-panel .button-primary {
+  background: #ffffff;
+  color: var(--neo-ink);
+}
+
+.home-page .neo-label,
+.home-page .neo-chip,
+.home-page .neo-mini-label,
+.adventures-page .adventures-stamp,
+.adventures-page .adventures-note-kicker,
+.adventures-page .pill,
+.adventures-page .adventure-board-height,
+.adventures-page .adventure-board-tags span,
+.contact-page .contact-mini-label,
+.gallery-page .gallery-stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.8rem;
+  border: var(--neo-border);
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 4px 4px 0 var(--neo-ink);
+  color: var(--neo-ink);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-page .neo-label,
+.adventures-page .adventures-stamp,
+.gallery-page .gallery-stamp {
+  background: var(--neo-accent);
+}
+
+.home-page .neo-chip {
+  background: var(--neo-accent-2);
+  color: #ffffff;
+}
+
+.home-page .neo-featured-visual,
+.adventures-page .adventures-poster-visual,
+.adventures-page .adventure-board-visual,
+.contact-page .contact-map-shell,
+.gallery-page .gallery-photo-frame,
+.gallery-page .gallery-card-visual {
+  border: var(--neo-border);
+  border-radius: calc(var(--neo-radius) - 4px);
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 5px 5px 0 var(--neo-ink);
+}
+
+.home-page .neo-experience-card img,
+.home-page .neo-featured-visual img,
+.home-page .neo-route-card img,
+.adventures-page .adventures-poster-visual img,
+.adventures-page .adventure-board-visual img,
+.gallery-page .gallery-photo-frame img,
+.gallery-page .gallery-card-visual img {
+  filter: saturate(1.08) contrast(1.03);
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form select,
+.contact-page .contact-form textarea {
+  border: var(--neo-border);
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 4px 4px 0 var(--neo-ink);
+}
+
+.contact-page .contact-form input:focus,
+.contact-page .contact-form select:focus,
+.contact-page .contact-form textarea:focus {
+  outline: none;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--neo-ink);
+}
+
+.contact-page .contact-map-link {
+  width: 100%;
+}
+
+.home-page .site-footer,
+.adventures-page .site-footer,
+.about-page .site-footer,
+.contact-page .site-footer,
+.gallery-page .site-footer {
+  border-top: 4px solid var(--neo-ink);
+  background: linear-gradient(180deg, var(--neo-accent-2) 0%, #173171 100%);
+}
+
+.home-page .site-footer h3,
+.home-page .site-footer p,
+.home-page .site-footer li,
+.home-page .site-footer a,
+.home-page .site-footer small,
+.adventures-page .site-footer h3,
+.adventures-page .site-footer p,
+.adventures-page .site-footer li,
+.adventures-page .site-footer a,
+.adventures-page .site-footer small,
+.about-page .site-footer h3,
+.about-page .site-footer p,
+.about-page .site-footer li,
+.about-page .site-footer a,
+.about-page .site-footer small,
+.contact-page .site-footer h3,
+.contact-page .site-footer p,
+.contact-page .site-footer li,
+.contact-page .site-footer a,
+.contact-page .site-footer small,
+.gallery-page .site-footer h3,
+.gallery-page .site-footer p,
+.gallery-page .site-footer li,
+.gallery-page .site-footer a,
+.gallery-page .site-footer small {
+  color: #ffffff;
+}
+
+@media (max-width: 980px) {
+  .home-page .neo-hero-copy,
+  .adventures-page .adventures-intro-stack,
+  .gallery-page .gallery-copy {
+    padding: 1.35rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .home-page .site-nav,
+  .adventures-page .site-nav,
+  .about-page .site-nav,
+  .contact-page .site-nav,
+  .gallery-page .site-nav {
+    background: var(--header-panel-bg);
+    border: var(--neo-border);
+    border-radius: 24px;
+    box-shadow: 10px 10px 0 var(--neo-ink);
+  }
+
+  .home-page .site-nav a,
+  .adventures-page .site-nav a,
+  .about-page .site-nav a,
+  .contact-page .site-nav a,
+  .gallery-page .site-nav a {
+    width: 100%;
+    justify-content: center;
+    color: var(--neo-ink);
+    border-color: var(--neo-ink);
+    background: #ffffff;
+    box-shadow: 4px 4px 0 var(--neo-ink);
+  }
+
+  .home-page .button,
+  .home-page .button-nav,
+  .adventures-page .button,
+  .adventures-page .button-nav,
+  .about-page .button,
+  .about-page .button-nav,
+  .contact-page .button,
+  .contact-page .button-nav,
+  .gallery-page .button,
+  .gallery-page .button-nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home-page .neo-hero-copy,
+  .adventures-page .adventures-intro-stack,
+  .gallery-page .gallery-copy {
+    box-shadow: 10px 10px 0 var(--neo-ink);
+  }
+}

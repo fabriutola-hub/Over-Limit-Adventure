@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Aventuras de trekking, climbing y expedición en Bolivia con una dirección visual cuidada, operación seria y rutas memorables."
+  >
+  <title>Aventuras | Over Limit Adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <script type="module" src="../assets/scripts/main.js"></script>
+</head>
+<body class="adventures-page" data-whatsapp-number="59162364372">
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="nav-shell">
+          <a class="brand brand-logo" href="../index.html" aria-label="Ir al inicio de Over Limit Adventure">
+            <img src="../assets/images/OverLimitAdventureLogo.png" alt="" aria-hidden="true">
+          </a>
+
+          <nav class="site-nav" data-nav>
+            <ul>
+                <li>
+                  <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                  <a href="../pages/tours.html" aria-current="page">Aventuras</a>
+                </li>
+                <li>
+                  <a href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                  <a href="../pages/galeria.html">Galería</a>
+                </li>
+                <li>
+                  <a href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="header-actions header-actions-mobile">
+              <a href="../pages/contacto.html" class="button button-nav">Reservar ahora</a>
+            </div>
+          </nav>
+
+          <div class="header-actions header-actions-desktop">
+            <a href="../pages/contacto.html" class="button button-nav">Reservar ahora</a>
+          </div>
+
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Abrir menú" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="adventures-main">
+    <section class="page-hero adventures-editorial-hero">
+      <div class="container adventures-editorial-shell">
+        <div class="adventures-intro-stack reveal">
+          <span class="eyebrow">Archivo de aventuras</span>
+          <div class="adventures-stamp-row">
+            <span class="adventures-stamp">Trekking</span>
+            <span class="adventures-stamp adventures-stamp-blue">Climbing</span>
+            <span class="adventures-stamp adventures-stamp-white">Amazon</span>
+            <span class="adventures-stamp">Classic Tours</span>
+          </div>
+          <h1>Aventuras</h1>
+          <p class="adventures-intro-lead">
+            Elige la ruta segun el tipo de experiencia, el nivel y el ritmo con el que quieres recorrer Bolivia.
+          </p>
+<div class="button-group adventures-editorial-actions">
+  <a class="button button-primary" href="../pages/contacto.html">Disenar mi aventura</a>
+  <a class="button button-secondary" href="../pages/tours.html#catalogo-aventuras">Ir al catalogo</a>
+</div>
+        </div>
+
+        <article class="adventures-poster-card reveal">
+          <div class="adventures-poster-head">
+            <span>Over Limit Adventure</span>
+            <span>Bolivia / guiado local</span>
+          </div>
+          <div class="adventures-poster-visual">
+            <img src="../assets/images/grupo.jpeg" alt="Grupo de viajeros">
+          </div>
+          <div class="adventures-poster-foot">
+            <div>
+              <strong>21</strong>
+              <span>rutas activas</span>
+            </div>
+            <div>
+              <strong>04</strong>
+              <span>categorias activas</span>
+            </div>
+            <div>
+              <strong>La Paz</strong>
+              <span>base de operacion</span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="adventures-side-notes reveal">
+          <article class="adventures-note adventures-note-blue">
+            <span class="adventures-note-kicker">Enfoque</span>
+            <p>Rutas armadas con lectura real de altura, tiempos, exposicion y progresion.</p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section adventures-rhythm-section">
+      <div class="container adventures-rhythm-strip">
+        <article class="adventures-rhythm-card reveal">
+          <strong>Rutas con peso</strong>
+          <p>El catalogo ahora separa claramente trekking, climbing, amazon y clasicos para elegir mejor.</p>
+        </article>
+        <article class="adventures-rhythm-card adventures-rhythm-card-blue reveal">
+          <strong>Filtro directo</strong>
+          <p>Puedes ver todo el tablero o quedarte solo con la categoria que te interesa.</p>
+        </article>
+        <article class="adventures-rhythm-card reveal">
+          <strong>Catalogo en tablero</strong>
+          <p>Se mantiene una composicion editorial para que cada ruta conserve presencia sin perder orden.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section adventures-filter-section" id="catalogo-aventuras">
+      <div class="container adventures-filter-shell reveal">
+        <div class="adventures-filter-copy">
+          <span class="eyebrow">Filtro de catalogo</span>
+          <h2>Explora el tablero por tipo de aventura.</h2>
+          <p>Elige una categoria para quedarte solo con trekking, climbing, amazon o classic tours.</p>
+        </div>
+        <div class="adventures-filter-controls" data-tour-filters>
+          <button
+            class="adventures-filter-button"
+            type="button"
+            data-tour-filter="all"
+            aria-pressed="true"
+          >
+            Todos
+          </button>
+          <button
+            class="adventures-filter-button"
+            type="button"
+            data-tour-filter="trekking"
+            aria-pressed="false"
+          >
+            Trekking
+          </button>
+          <button
+            class="adventures-filter-button"
+            type="button"
+            data-tour-filter="climbing"
+            aria-pressed="false"
+          >
+            Climbing
+          </button>
+          <button
+            class="adventures-filter-button"
+            type="button"
+            data-tour-filter="amazon"
+            aria-pressed="false"
+          >
+            Amazon
+          </button>
+          <button
+            class="adventures-filter-button"
+            type="button"
+            data-tour-filter="classic-tours"
+            aria-pressed="false"
+          >
+            Classic Tours
+          </button>
+        </div>
+      </div>
+    </section>
+
+        <section class="section adventures-catalog-section" data-tour-category="trekking">
+      <div class="container adventures-catalog-shell">
+        <aside class="adventures-catalog-rail reveal">
+          <span class="eyebrow">Trekking</span>
+          <h2>Senderos de altura y travesias historicas</h2>
+          <p>
+            Rutas para caminar la Cordillera Real y los antiguos caminos andinos con perfiles que van desde panoramicas de altura hasta travesias largas.
+          </p>
+          <div class="adventures-rail-metrics">
+            <div>
+              <strong>Clasicos</strong>
+              <span>Choro, Takesi, Condoriri</span>
+            </div>
+            <div>
+              <strong>Aclimatacion</strong>
+              <span>Pico Austria</span>
+            </div>
+            <div>
+              <strong>Travesia larga</strong>
+              <span>Trans Cordillera Real</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="adventures-route-board">
+          <article class="adventure-board-card adventure-board-card-hero reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/el_choro.jpg" alt="Ruta El Choro">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Trekking</span>
+                <span class="adventure-board-height">4700 m / 1100 m</span>
+              </div>
+              <h3>Choro</h3>
+              <p>Camino preincaico que cruza desde las montanas de nieve hacia los Yungas pacenos, mostrando en pocos dias un cambio climatico y visual muy marcado.</p>
+              <div class="adventure-board-tags">
+  <span>Camino preincaico</span>
+  <span>Yungas de La Paz</span>
+  <span>Cambio de ecosistema</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-blue reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/takesi.jpeg" alt="Camino Takesi">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Trekking</span>
+                <span class="adventure-board-height"></span>
+              </div>
+              <h3>Takesi</h3>
+              <p>Uno de los senderos del Inca mejor preservados en Bolivia, descendiendo desde los valles altos hasta una vegetacion tropical rodeada de rios y cambio de paisaje constante.</p>
+              <div class="adventure-board-tags">
+  <span>Sendero del Inca</span>
+  <span>Vegetacion tropical</span>
+  <span>Rios de montana</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-tall reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/condoriri.jpg" alt="Trekking en Condoriri">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Trekking</span>
+                <span class="adventure-board-height">5100 m / 5648 m</span>
+              </div>
+              <h3>Condoriri Trek</h3>
+              <p>Caminata de altura con vistas al macizo Condoriri, lagunas glaciares y posibilidades reales de ver condores sobre la Cordillera Real.</p>
+              <div class="adventure-board-tags">
+  <span>13 picos nevados</span>
+  <span>Lagunas glaciares</span>
+  <span>Observacion de condores</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-wide reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/pico_austria.jpg" alt="Vista panoramica de laguna y cumbres">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Trekking</span>
+                <span class="adventure-board-height"></span>
+              </div>
+              <h3>Pico Austria</h3>
+              <p>Ascenso panoramico con acceso relativamente amable, ideal para sentir la altura sin entrar todavia en la exigencia tecnica de una gran cumbre.</p>
+              <div class="adventure-board-tags">
+  <span>Vistas panoramicas</span>
+  <span>Ascenso accesible</span>
+  <span>Buena aclimatacion</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-yellow reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/Cordillera_laguna.jpg" alt="Cordillera y laguna de altura">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Trekking</span>
+                <span class="adventure-board-height">200 km</span>
+              </div>
+              <h3>Trans Cordillera Real</h3>
+              <p>Gran travesia de la Cordillera Real, desde Sorata hasta la zona este de Huayna Potosi, con jornadas largas y una lectura continua del territorio.</p>
+              <div class="adventure-board-tags">
+  <span>Cordillera Real</span>
+  <span>Sorata</span>
+  <span>Varios dias</span>
+</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section adventures-catalog-section" data-tour-category="climbing">
+      <div class="container adventures-catalog-shell">
+        <aside class="adventures-catalog-rail reveal">
+          <span class="eyebrow">Climbing</span>
+          <h2>Cumbres iconicas y progresion tecnica</h2>
+          <p>
+            Ascensiones pensadas para combinar aclimatacion, tecnica y grandes montanas bolivianas en un bloque claro de alta montana.
+          </p>
+          <div class="adventures-rail-metrics">
+            <div>
+              <strong>Iconicas</strong>
+              <span>Huayna Potosi, Illimani, Sajama</span>
+            </div>
+            <div>
+              <strong>Progresion</strong>
+              <span>Condoriri, Pequeno Alpamayo, Mururata</span>
+            </div>
+            <div>
+              <strong>Volcanes</strong>
+              <span>Parinacota, Acotango</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="adventures-route-board">
+          <article class="adventure-board-card adventure-board-card-hero reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/huayna_1.avif" alt="Fotografia de altura en Huayna Potosi">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Climbing</span>
+                <span class="adventure-board-height">6088 m</span>
+              </div>
+              <h3>Huayna Potosi</h3>
+              <p>Una de las montanas mas visitadas de Bolivia para iniciarse en altura. Combina acceso razonable, glaciar permanente y una vista potente sobre la Cordillera Real.</p>
+              <div class="adventure-board-tags">
+  <span>Ideal para iniciarse</span>
+  <span>Glaciares perpetuos</span>
+  <span>Visible desde La Paz</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-blue reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/Illimani.jpg" alt="Ruta de alta montana">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Climbing</span>
+                <span class="adventure-board-height">6490 m</span>
+              </div>
+              <h3>Illimani</h3>
+              <p>El protector de La Paz y una de las montanas mas iconicas de Sudamerica por su presencia, su exigencia intermedia y las vistas abiertas sobre la ciudad.</p>
+              <div class="adventure-board-tags">
+  <span>Cumbre emblematica</span>
+  <span>Dificultad media</span>
+  <span>Vistas de La Paz</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-tall reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/Sajama_2.jpg" alt="Paisaje del Sajama">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Climbing</span>
+                <span class="adventure-board-height">6542 m</span>
+              </div>
+              <h3>Sajama</h3>
+              <p>El pico mas alto de Bolivia, rodeado por volcanes y nevados del altiplano. La ascension se complementa con un entorno amplio y aguas termales al regreso.</p>
+              <div class="adventure-board-tags">
+  <span>Pico mas alto</span>
+  <span>Aguas termales</span>
+  <span>Altiplano abierto</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-yellow reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/condoriri_2.jpg" alt="Macizo Condoriri">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Climbing</span>
+                <span class="adventure-board-height">5648 m</span>
+              </div>
+              <h3>Condoriri</h3>
+              <p>El macizo Condoriri concentra varias lineas memorables. Su cumbre principal, conocida como la Cabeza del Condor, destaca por su perfil afilado y exigencia real.</p>
+              <div class="adventure-board-tags">
+  <span>Cabeza del Condor</span>
+  <span>Perfil iconico</span>
+  <span>Ruta exigente</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/mururata.jpg" alt="Arista de montana">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Climbing</span>
+                <span class="adventure-board-height">5871 m</span>
+              </div>
+              <h3>Mururata</h3>
+              <p>Vecino del Illimani y cercano a La Paz, ofrece una cara sur mas retadora para montanistas que buscan hielo, roca y una linea menos evidente.</p>
+              <div class="adventure-board-tags">
+  <span>Cerca del Illimani</span>
+  <span>Hielo y roca</span>
+  <span>Cara sur</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/pequeno_alpamayo.jpg" alt="Campamento de altura">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Climbing</span>
+                <span class="adventure-board-height">5425 m</span>
+              </div>
+              <h3>Pequeno Alpamayo</h3>
+              <p>Pico de altitud moderada, muy util para aclimatar y probar una ascension mas alta segun el objetivo y la evolucion del grupo.</p>
+              <div class="adventure-board-tags">
+  <span>Altitud moderada</span>
+  <span>Aclimatacion</span>
+  <span>Progresion tecnica</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-white reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/Paranicota.jpg" alt="Paisaje volcanico del altiplano">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Climbing</span>
+                <span class="adventure-board-height">6330 m</span>
+              </div>
+              <h3>Parinacota</h3>
+              <p>Volcan de cima amplia con crater visible y un panorama dominante sobre el Parque Nacional Sajama y sus grandes conos volcanicos.</p>
+              <div class="adventure-board-tags">
+  <span>Crater en cumbre</span>
+  <span>Parque Sajama</span>
+  <span>Volcan andino</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/acotango.jpg" alt="Volcan y ruta de altura">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Climbing</span>
+                <span class="adventure-board-height">6052 m</span>
+              </div>
+              <h3>Acotango</h3>
+              <p>Ascenso accesible en ambiente desertico de altura, con presencia de azufre y vistas limpias a las grandes piramides volcanicas del altiplano.</p>
+              <div class="adventure-board-tags">
+  <span>Muy accesible</span>
+  <span>Azufre</span>
+  <span>Piramides volcanicas</span>
+</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section adventures-catalog-section" data-tour-category="amazon">
+      <div class="container adventures-catalog-shell">
+        <aside class="adventures-catalog-rail reveal">
+          <span class="eyebrow">Amazon</span>
+          <h2>Fauna y selva boliviana</h2>
+          <p>
+            Experiencias de naturaleza en tierras bajas para quienes quieren combinar observacion de fauna, humedad tropical y un ritmo distinto al de la montana.
+          </p>
+          <div class="adventures-rail-metrics">
+            <div>
+              <strong>Fauna</strong>
+              <span>Pampas</span>
+            </div>
+            <div>
+              <strong>Selva</strong>
+              <span>Jungla</span>
+            </div>
+            <div>
+              <strong>Base habitual</strong>
+              <span>Rurrenabaque</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="adventures-route-board">
+          <article class="adventure-board-card adventure-board-card-hero reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/pampas.jpg" alt="Pampas amazonicas">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Amazon</span>
+                <span class="adventure-board-height"></span>
+              </div>
+              <h3>Pampas</h3>
+              <p>Programa centrado en observacion de fauna en habitat natural, ideal para quienes quieren una experiencia selvatica abierta y accesible.</p>
+              <div class="adventure-board-tags">
+  <span>Fauna silvestre</span>
+  <span>Habitat natural</span>
+  <span>Experiencia amazonica</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-blue reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/jungla_boliviana.jpg" alt="Jungla boliviana">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Amazon</span>
+                <span class="adventure-board-height"></span>
+              </div>
+              <h3>Jungla</h3>
+              <p>Exploracion de la selva tropical boliviana con entrada habitual por Rurrenabaque, en una experiencia mas humeda, densa e impredecible.</p>
+              <div class="adventure-board-tags">
+  <span>Selva tropical</span>
+  <span>Rurrenabaque</span>
+  <span>Amazonia boliviana</span>
+</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section adventures-catalog-section" data-tour-category="classic-tours">
+      <div class="container adventures-catalog-shell">
+        <aside class="adventures-catalog-rail reveal">
+          <span class="eyebrow">Classic Tours</span>
+          <h2>Clasicos de paisaje, cultura y salidas cortas</h2>
+          <p>
+            Una seleccion pensada para viajeros que quieren combinar historia, altiplano, lagos, glaciares cercanos y rutas iconicas de Bolivia.
+          </p>
+          <div class="adventures-rail-metrics">
+            <div>
+              <strong>Cultura</strong>
+              <span>Copacabana, Tiwanaku, Lago Titicaca</span>
+            </div>
+            <div>
+              <strong>Naturaleza</strong>
+              <span>Charquini, Salar de Uyuni</span>
+            </div>
+            <div>
+              <strong>Ruta extra</strong>
+              <span>Camino de la Muerte</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="adventures-route-board">
+          <article class="adventure-board-card adventure-board-card-hero reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/copacabana.jpg" alt="Vista de Copacabana">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Classic Tours</span>
+                <span class="adventure-board-height"></span>
+              </div>
+              <h3>Copacabana</h3>
+              <p>Destino lacustre con miradores, travesias en lancha y acceso a la Isla del Sol y la Isla de la Luna, en un entorno cargado de simbolismo andino.</p>
+              <div class="adventure-board-tags">
+  <span>Calvario</span>
+  <span>Isla del Sol</span>
+  <span>Paisaje lacustre</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-blue reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/tiwanaku.webp" alt="Sitio arqueologico Tiwanaku">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Classic Tours</span>
+                <span class="adventure-board-height"></span>
+              </div>
+              <h3>Tiwanaku</h3>
+              <p>Uno de los sitios arqueologicos mas importantes de Bolivia, clave para entender el desarrollo religioso y cultural de Tiwanaku.</p>
+              <div class="adventure-board-tags">
+  <span>Arqueologia</span>
+  <span>Historia andina</span>
+  <span>Patrimonio</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-tall reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/charquini.jpg" alt="Glaciar de Charquini">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Classic Tours</span>
+                <span class="adventure-board-height"></span>
+              </div>
+              <h3>Charquini</h3>
+              <p>Salida corta desde La Paz hacia un glaciar con vistas de hielo, nieve y la conocida Laguna Esmeralda como punto visual central.</p>
+              <div class="adventure-board-tags">
+  <span>Glaciar</span>
+  <span>Hielo y nieve</span>
+  <span>Laguna Esmeralda</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-wide reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/lago_titicaca.jpg" alt="Lago Titicaca">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Classic Tours</span>
+                <span class="adventure-board-height"></span>
+              </div>
+              <h3>Lago Titicaca</h3>
+              <p>Ruta cultural que cruza paisajes abiertos, comunidades del altiplano y ruinas historicas vinculadas a la Isla del Sol.</p>
+              <div class="adventure-board-tags">
+  <span>Sendero cultural</span>
+  <span>Isla del Sol</span>
+  <span>Ruinas andinas</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/salar_de_uyuni.webp" alt="Salar de Uyuni">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Classic Tours</span>
+                <span class="adventure-board-height"></span>
+              </div>
+              <h3>Salar de Uyuni</h3>
+              <p>El salar mas grande del mundo y una region semidesertica de fuerte impacto visual, combinada con lagunas y formaciones volcanicas.</p>
+              <div class="adventure-board-tags">
+  <span>Gran escala</span>
+  <span>Tierras volcanicas</span>
+  <span>Lagunas de color</span>
+</div>
+            </div>
+          </article>
+          <article class="adventure-board-card adventure-board-card-yellow reveal">
+            <div class="adventure-board-visual">
+              <img src="../assets/images/camino_de_la_muerte.jpg" alt="Ruta Camino de la Muerte">
+            </div>
+            <div class="adventure-board-body">
+              <div class="adventure-board-topline">
+                <span class="pill">Classic Tours</span>
+                <span class="adventure-board-height">80 km</span>
+              </div>
+              <h3>Camino de la Muerte</h3>
+              <p>Descenso en bicicleta entre altura y Yungas, conocido por la transicion radical de clima, vegetacion y sensacion de velocidad.</p>
+              <div class="adventure-board-tags">
+  <span>Descenso en bicicleta</span>
+  <span>Yungas</span>
+  <span>Adrenalina</span>
+</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section adventures-cta-section">
+      <div class="container">
+        <div class="adventures-cta-banner reveal">
+          <div class="adventures-cta-title">
+            <span class="adventures-stamp adventures-stamp-blue">Siguiente paso</span>
+            <h2>Tu aventura no necesita parecerse a otra.</h2>
+          </div>
+          <p>
+            Comentanos la fecha y el objetivo. Nosotros lo transformamos en una ruta bien construida, con logistica clara y una propuesta que se vea tan solida como se opera.
+          </p>
+          <a class="button button-primary" href="../pages/contacto.html">Reservar aventura</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="../index.html" aria-label="Ir al inicio de Over Limit Adventure">
+          <img src="../assets/images/OverLimitAdventureLogo.png" alt="" aria-hidden="true">
+        </a>
+        <p>
+          Agencia especializada en trekking, climbing y experiencias privadas en Bolivia. Diseñamos aventuras confiables, memorables y visualmente poderosas.
+        </p>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <ul class="footer-list">
+          <li><a href="mailto:overlimitadventure1@gmail.com">overlimitadventure1@gmail.com</a></li>
+          <li><a href="tel:+59162364372">+591 62364372</a></li>
+          <li>La Paz, Bolivia</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Explorar</h3>
+        <ul class="footer-list">
+              <li><a href="../pages/tours.html">Tours y aventuras</a></li>
+              <li><a href="../pages/nosotros.html">Nuestra agencia</a></li>
+              <li><a href="../pages/galeria.html">Galería visual</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Redes</h3>
+        <ul class="footer-list">
+              <li><a href="https://www.instagram.com/overlimitadventure?igsh=emJpdnFpcjJmeDIw" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://wa.me/59162364372" target="_blank" rel="noreferrer">WhatsApp</a></li>
+              <li><a href="https://www.facebook.com/share/1J522aN4kD/" target="_blank" rel="noreferrer">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span data-current-year></span> Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
