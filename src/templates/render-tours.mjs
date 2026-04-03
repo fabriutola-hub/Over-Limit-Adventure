@@ -121,9 +121,9 @@ ${renderRhythmCards()}
     <section class="section adventures-filter-section" id="catalogo-aventuras">
       <div class="container adventures-filter-shell reveal">
         <div class="adventures-filter-copy">
-          <span class="eyebrow">Filtro de catalogo</span>
-          <h2>Explora el tablero por tipo de aventura.</h2>
-          <p>Elige una categoria para quedarte solo con trekking, climbing, amazon o classic tours.</p>
+          <span class="eyebrow">Encuentra tu ruta</span>
+          <h2>Filtra por tipo de aventura.</h2>
+          <p>Revisa solo trekking, climbing, amazon o classic tours segun la experiencia que quieras reservar.</p>
         </div>
         <div class="adventures-filter-controls" data-tour-filters>
 ${renderTourFilters()}

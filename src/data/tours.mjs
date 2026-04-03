@@ -296,7 +296,7 @@ export const tourCount = tourSections.reduce((total, section) => total + section
 
 export const tourPageContent = {
   hero: {
-    eyebrow: "Archivo de aventuras",
+    eyebrow: "Aventuras en Bolivia",
     stamps: ["Trekking", "Climbing", "Amazon", "Classic Tours"],
     title: "Aventuras",
     description:
@@ -311,7 +311,7 @@ export const tourPageContent = {
     imageAlt: "Grupo de viajeros",
     metrics: [
       { value: String(tourCount), label: "rutas activas" },
-      { value: String(tourSections.length).padStart(2, "0"), label: "categorias activas" },
+      { value: String(tourSections.length).padStart(2, "0"), label: "tipos de aventura" },
       { value: "La Paz", label: "base de operacion" }
     ]
   },
@@ -321,17 +321,17 @@ export const tourPageContent = {
   },
   rhythmCards: [
     {
-      title: "Rutas con peso",
-      text: "El catalogo ahora separa claramente trekking, climbing, amazon y clasicos para elegir mejor."
+      title: "Elige por experiencia",
+      text: "Encuentra rutas de caminata, alta montana, selva y salidas clasicas segun el viaje que quieres hacer."
     },
     {
-      title: "Filtro directo",
-      text: "Puedes ver todo el tablero o quedarte solo con la categoria que te interesa.",
+      title: "Busca mas rapido",
+      text: "Filtra por tipo de aventura y revisa solo las opciones que realmente te interesan.",
       variant: "blue"
     },
     {
-      title: "Catalogo en tablero",
-      text: "Se mantiene una composicion editorial para que cada ruta conserve presencia sin perder orden."
+      title: "Operacion local",
+      text: "Cada salida se organiza con logistica clara, tiempos realistas y acompanamiento desde La Paz."
     }
   ],
   cta: {
